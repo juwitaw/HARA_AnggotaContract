@@ -1,3 +1,0 @@
-1. Anggota akan "verified" jika anggota tersebut suidah dibuat selama 3 hari
-2. Pengecekan jika anggota sudah verified ato tidak akan di cek jika verifiedAddress() dipanggil.
-   Jadi stiap kali verifiedAddress() function dipanggil akan print out smua verified address Anggota
