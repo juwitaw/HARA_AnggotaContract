@@ -1,13 +1,15 @@
 FROM node:12-alpine
 
-COPY ./Truffle_test1/package.json .
+COPY ./Truffle_test1/package.json ./Truffle_test1/package.json
 
+RUN npm install --unsafe-perm -g truffle@5.1.65
+WORKDIR Truffle_test1
 RUN npm install
-RUN npm install -g truffle
 
 ADD Truffle_test1 .
 
-CMD ["node", "./contracts/KartuAnggota.sol"]
+
+CMD ["npm", "run", "test"]
 
 
 
